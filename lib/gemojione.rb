@@ -63,7 +63,7 @@ module Gemojione
 
   def self.image_url_for_name(name)
     emoji = index.find_by_name(name)
-    ActionController::Base.helpers.image_path("emoji/#{emoji["unicode"]}")
+    ActionController::Base.helpers.image_path("emoji/#{emoji["unicode"]}/.png")
   end
 
   def self.image_url_for_unicode_moji(moji)
